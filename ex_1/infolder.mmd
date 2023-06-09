@@ -2,7 +2,9 @@ sequenceDiagram
 participant Browser
 participant Sever
 %% background highlight
-rect yellow 
+rect lightblue
 Browser ->> Sever : GET http://newsever/new
-Sever ->> Browser : responds html file
+Note over Browser, Sever:req sever with methode Get
+Sever -->> Browser : responds html file
+Note over Browser, Sever: responds html file
 end
