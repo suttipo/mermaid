@@ -1,1 +1,8 @@
 sequenceDiagram
+participant Browser
+participant Sever
+%% background highlight
+rect yellow 
+Browser ->> Sever : GET http://newsever/new
+Sever ->> Browser : responds html file
+end
