@@ -1,5 +1,8 @@
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+sequenceDiagram %% this a comment
+ box yellow
+ participant a
+ participant b 
+ end
+  note over a,b : Text in note  
+  a ->>+ b : hey b
+  b ->>- a : hey a
