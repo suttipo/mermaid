@@ -1,10 +1,13 @@
 sequenceDiagram
+
 participant Browser
 participant Sever
-%% background highlight
-rect lightblue
+
+%% start background area and define color
+rect lightblue 
 Browser ->> Sever : GET http://newsever/new
 Note over Browser, Sever:req sever with methode Get
 Sever -->> Browser : responds html file
 Note over Browser, Sever: responds html file
+%%end background area
 end
