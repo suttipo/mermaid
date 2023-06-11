@@ -15,3 +15,5 @@ Browser ->> Sever : Get https://studies.cs.helsinki.fi/exampleapp/main.js
 Sever -->> Browser : The javascript file 
 Note over Browser,Sever: Browser execute javascript file and fetch data.json from Sever
 Browser  ->> Sever: Get https://studies.cs.helsinki.fi/exampleapp/data.json
+Sever -->> Browser: data.json file
+Note over Browser,Sever: render data.json
