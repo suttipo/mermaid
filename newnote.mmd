@@ -2,7 +2,7 @@ sequenceDiagram
     participant Browser
     participant Sever
 
-    Note over Browser,Sever :In the Browser when click button<br> it create new note and push in array notes <br>then it render new array notes and send request 
+    Note over Browser,Sever :In the Browser when click button<br> it create new note and push in array notes <br>then it render new array notes and send request <br> with set status 201 and new note in json format file
     Browser ->> Sever: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate Sever
     Sever -->> Browser: data.json {massage:"note create"}
